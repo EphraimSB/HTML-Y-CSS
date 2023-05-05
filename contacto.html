@@ -12,9 +12,69 @@
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="nostros.html">Nosotros</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
+    <header>
+        <main>
+            <h1>Contacto</h1>
+            <form action="" method="post">
+                <div>
+                    <label for="txtNombre">Nombre:</label>
+                    <input type="text" name="txtNombre" id="txtNombre">
+                </div>
+                <div>
+                    <label for="txtCorreo">Correo:</label>
+                    <input type="text" name="txtCorreo" id="txtCorreo">
+                </div>
+                <div>
+                    <label for="txtTelefono">Telefono:</label>
+                    <input type="tel" name="txtTelefono" id="txtTelefono">
+                </div>
+                <div>
+                    <label for="Fecha de Nacimiento:"></label>
+                    <input type="date" name="txtFechaNacimiento" id="txtFechanacimiento">
+                </div>
+                <div>
+                    <label for="txtPais">Pais de Origen</label>
+                    <select name="IstPais" id="IstPais">
+                        <option disabled selected>Seleccionar</option>
+                           <optgroup label="Sudamerica">
+                           <option value="54">Argentina</option>
+                           <option value="58">Venezuela</option> 
+                           <option value="57">Colombia</option>
+                        </optgroup>
+                        <optgroup label="Europa">
+                            <option value="34">España</option>
+                            <option value="33">Francia</option>
+                            <option value="49">Alemania</option>
+                        </optgroup>  
+                    </select>
+                <div>
+                    <label for="txtAsunto">Asunto</label>
+                    <select name="lsasunto" id="lsasunto">
+                        <option disabled selected>Seleccionar</option>
+                        <option value="54 ">Ventas</option> 
+                        <option value="54 ">Soporte</option> 
+                        <option value="54 ">Webmaster</option> 
+
+                    </select>
+                </div>
+
+
+
+                    <div>
+                        <label for="txtMensaje">Mensaje:</label>
+                        <textarea name="txtMensaje" id="txtMensaje">Escribir aqui...</textarea>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </main>
+        <footer>Redes Sociales</footer>
+    </header>
 </body>
 </html>
