@@ -3,17 +3,38 @@
   body{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
   }
-h1{font-size: 36px;
-color: rgb(234, 15, 15);
-text-align: center;
+html {
+    scroll-behavior: smooth;
+}
+main {
+    margin: 20px 10%;
+}
+body{
+    font-family: "Monserrat", sans-serif;
+}
 
+
+#Inicio h1{font-size: 36px;
+    text-align: center;
+    color: rgb(234, 15, 15);
+
+
+}
+#Contacto h1{font-size: 36px;
+    text-align: center;
+    color: rgb(234, 15, 15);
+
+}
+
+#nosotros h2{
+    color: antiquewhite;
 }
 
 h2{
     font-size: 16px;
 }
 h3{
-    color: red;
+    color: rgb(190, 185, 185);
     text-decoration: underline;
 }
 p{
@@ -29,6 +50,35 @@ p{
 .negrita{
     font-weight: 800;
 }
+.producto h3{
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+.producto span{
+    color: green;
+    font-weight: 800;
+}
+.producto img{
+    height: 130px;
+    margin: auto;
+    display: block;
+}
+.producto{
+    
+    background-color: #eee;
+    width: 280px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    
+}
+#video{
+    background-color: rgba(238, 224, 224, 0);
+    border-radius: 8px;
+    padding: 5px 20px 20px 20px;
+}
 .verde{
     color: green;
     text-decoration: solid;
@@ -39,4 +89,71 @@ p{
     color: grey;
     font-weight: 800;
     
+}
+
+img {
+    width: 200px; /* Ancho deseado para las imágenes */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+    vertical-align: middle; /*Alineacion vertical de las imagenes */
+  }
+
+textarea{
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    background-color: #eee;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    background-color: red;
+     
+}
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 14px 0px;
+    height: 80px;
+}
+
+nav li{
+    display: inline ;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffff;
+    padding: 0 50px ;
+}
+
+form label{
+    display: block;
+}
+form input [type=text], form input [type=date], form input [type=tel],form input [type=email], form select, form textarea{
+    width: 100%;
+    border: 1px solid red; 
+    height: 20px;
+    display: block;
+    border-radius: 8px;
+
+}
+
+form textarea{
+    height: 100px;
+}
+
+form div{
+       margin-bottom: 10px;
+    
+}
+
+form button{
+    padding: 10px 20px;
+    border: 1px solid red;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
 }

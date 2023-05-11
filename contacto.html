@@ -7,8 +7,13 @@
     <link rel="icon" type="image/png" href="imagenes/tienda.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Contacto</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
+<body id="Contacto">
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -33,10 +38,10 @@
                     <input type="tel" name="txtTelefono" id="txtTelefono">
                 </div>
                 <div>
-                    <label for="Fecha de Nacimiento:"></label>
+                    <label for="Fecha de Nacimiento:">Fecha de Nacimiento</label>
                     <input type="date" name="txtFechaNacimiento" id="txtFechanacimiento">
                 </div>
-                <div>
+                
                     <label for="txtPais">Pais de Origen</label>
                     <select name="IstPais" id="IstPais">
                         <option disabled selected>Seleccionar</option>
@@ -51,26 +56,39 @@
                             <option value="49">Alemania</option>
                         </optgroup>  
                     </select>
-                <div>
-                    <label for="txtAsunto">Asunto</label>
-                    <select name="lsasunto" id="lsasunto">
-                        <option disabled selected>Seleccionar</option>
-                        <option value="54 ">Ventas</option> 
-                        <option value="54 ">Soporte</option> 
-                        <option value="54 ">Webmaster</option> 
-
+             
+                    <label for="lsAsunto">Asunto</label>
+                    <select name="lsAsunto" id="lsAsunto" required>
+                    <option value="" selected disabled> Seleccionar</option>
+                    <option value="ventas">Ventas</option>
                     </select>
-                </div>
-
 
 
                     <div>
                         <label for="txtMensaje">Mensaje:</label>
                         <textarea name="txtMensaje" id="txtMensaje">Escribir aqui...</textarea>
                     </div>
+                <div>
+                    <input type="checkbox" name="chkNewsletter" id="chkNewsletter" checked>
+                    <label for="checkNewsletter">Deseo recibir mensajes sobre novedades</label>
                 </div>
                 <div>
-                    <input type="submit" value="Enviar">
+                    <input type="checkbox" name="chkCondiciones" id="chkCondiciones" checked>
+                    <label for="chkCondiciones">Acepto terminos y condiciones</label>
+                </div>
+                               <div class="opciones">
+                    <label>¿Eres mayor de edad?</label>
+                    <label for="optMayorSi">Si</label>
+                    <input type="radio" name="optMayorEdad" id="optMayorSi">
+
+                    <label for="optMayorNo">No</label>
+                    <input type="radio" name="optMayorEdad" id="optMayorNo">
+                </div>
+                <div>
+                    <button type="reset">Limpiar Formulario</button>
+                </div>
+                <div>
+                    <button type="submit" name="btnEnviar" id="btnEnviar"> Enviar </button> 
                 </div>
             </form>
         </main>
